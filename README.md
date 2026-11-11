@@ -1,5 +1,8 @@
 # 🚀 Unimed-BH Data Engineering Pipeline (Case de Estudo)
 
+> ⚠️ **Status do Projeto:** 🛠️ *Em construção.*  
+> A primeira fase (Ingestão com Python, qualidade com Pytest e Staging no dbt) já está implementada. A integração e carga no Data Warehouse (Snowflake) está atualmente em desenvolvimento.
+
 Este repositório consiste em um **projeto de demonstração técnica (Case Prático)** desenvolvido com o objetivo de consolidar e apresentar conhecimentos práticos na área de **Engenharia de Dados**. O projeto simula a extração automatizada, estruturação e transformação de dados institucionais públicos do portal Unimed-BH, aplicando arquitetura moderna e boas práticas corporativas.
 
 ## 🎯 Objetivo do Projeto
