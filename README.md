@@ -13,7 +13,7 @@ Demonstrar na prática o domínio do ciclo completo de um pipeline de dados (End
 * **Data Warehouse (Módulo 2 - Em andamento):** Snowflake
 
 ## 🏗️ Arquitetura do Projeto
-1. **Ingestão (Python):** Extração automatizada dos dados públicos do portal Unimed-BH.
+1. **Ingestão (Python):** Extração de dados públicos do portal Unimed-BH.
 2. **Camada Raw (Bronze):** Armazenamento imutável dos dados brutos em formato `.csv`.
 3. **Garantia de Qualidade (Pytest):** Validação unitária de existência, esquema e integridade dos arquivos gerados.
 4. **Camada Staging (Silver / dbt):** Padronização, limpeza (CTEs, `TRIM`, `UPPER`) e aplicação de contratos de dados via `schema.yml`.
