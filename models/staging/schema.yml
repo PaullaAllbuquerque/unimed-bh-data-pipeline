@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_portal_unimed
+    description: "Tabela de staging contendo os links e menus extraídos do portal oficial da Unimed-BH."
+    columns:
+      - name: nome_menu
+        description: "Texto descritivo do link ou menu."
+        tests:
+          - not_null
+
+      - name: link_acesso
+        description: "URL de destino do link extraído."
+        tests:
+          - not_null
+
+      - name: fonte_dados
+        description: "Origem dos dados da extração."
