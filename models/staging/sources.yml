@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: unimed_raw
+    description: "Dados brutos extraídos do portal da Unimed BH"
+    database: UNIMED_DB
+    schema: staging
+    tables:
+      - name: stg_unimed_locais_raw
+        description: "Tabela bruta contendo a lista de unidades e locais de atendimento da Unimed em Belo Horizonte"
