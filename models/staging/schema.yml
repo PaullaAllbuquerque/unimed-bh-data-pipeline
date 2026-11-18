@@ -1,18 +1,27 @@
 version: 2
 
 models:
-  - name: stg_portal_unimed
-    description: "Tabela de staging contendo os links e menus extraídos do portal oficial da Unimed-BH."
+  - name: stg_unimed_locais
+    description: "Tabela de staging contendo os links, rotas e textos extraídos do portal oficial da Unimed-BH."
     columns:
-      - name: nome_menu
+      - name: texto_link
         description: "Texto descritivo do link ou menu."
         tests:
           - not_null
 
-      - name: link_acesso
-        description: "URL de destino do link extraído."
+      - name: url_destino
+        description: "URL ou rota de destino do link extraído."
         tests:
           - not_null
 
-      - name: fonte_dados
+      - name: origem
         description: "Origem dos dados da extração."
+        tests:
+          - not_null
+
+      - name: tipo_url
+        description: "Classificação do destino do link (Link Externo, Âncora Interna ou Rota Interna Portal)."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Link Externo', 'Âncora Interna', 'Rota Interna Portal']
